@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contacto.css" />
+    <script src="contacto.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -15,7 +16,8 @@
     <div class="row">
       <div class="column side"></div>
       <div class="column middle">
-        <form action="">
+        <h2>formulario de contacto</h2>
+        <form name="form">
           <label for="name">Nombre:</label><br />
           <input type="text" id="name" name="name" /><br />
           <label for="email">Email:</label><br />
@@ -28,6 +30,7 @@
             pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
           />
           <br />
+          <button onclick="display();">Enviar</button>
         </form>
       </div>
       <div class="column side"></div>
